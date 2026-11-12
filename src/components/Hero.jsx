@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { motion } from "motion/react";
 import img from "../assets/TahirGreen.jpg";
+import { FiDownload } from "react-icons/fi";
 
 const Hero = () => {
   let ref = useRef(null);
@@ -68,6 +69,33 @@ const Hero = () => {
                 I build designs and website that solve problems,inspiring
                 success
               </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="flex flex-wrap justify-center gap-4 mt-6 text-base font-medium"
+              >
+                {/* main button */}
+                <motion.a
+                  href="#contact"
+                  whileHover={{ scale: 1.06 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-brand-500 text-white px-6 py-2.5 rounded-2xl shadow-glow hover:bg-brand-400 hover:shadow-glow-lg transition-[background-color,box-shadow] duration-300"
+                >
+                  Hire Me
+                </motion.a>
+
+                {/* download CV button */}
+                <motion.a
+                  href="/TahirProfile.pdf"
+                  download="TahirProfile.pdf"
+                  whileHover={{ scale: 1.06 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center gap-2 border border-brand-500 text-brand-400 px-6 py-2.5 rounded-2xl hover:bg-brand-500/10 hover:shadow-glow transition-[background-color,box-shadow] duration-300"
+                >
+                  <FiDownload /> Download CV
+                </motion.a>
+              </motion.div>
             </div>
 
             {/* shadow div (pulsing glow) */}
