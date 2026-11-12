@@ -7,11 +7,9 @@ import { motion } from "motion/react";
 import "swiper/css";
 
 // replace with your own images
-import img2 from "../assets/img.jpg";
-import img1 from "../assets/img.jpg";
-import img3 from "../assets/img.jpg";
-import img4 from "../assets/img.jpg";
-import img5 from "../assets/img.jpg";
+import img2 from "../assets/img1.png";
+import img1 from "../assets/1.png";
+import img3 from "../assets/chat.png";
 
 const works = [
   {
@@ -28,20 +26,8 @@ const works = [
   },
   {
     img: img3,
-    title: "Admin Dashboard",
-    desc: "Clean dashboard with charts and data tables.",
-    link: "#",
-  },
-  {
-    img: img4,
-    title: "Landing Page",
-    desc: "Fast, responsive landing page for a business.",
-    link: "#",
-  },
-  {
-    img: img5,
-    title: "Blog App",
-    desc: "Blog platform with login and post management.",
+    title: "Chat Applicaton",
+    desc: "Clean dashboard with charts",
     link: "#",
   },
 ];
